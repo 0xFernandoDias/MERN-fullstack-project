@@ -7,8 +7,13 @@
     "start": "cross-env NODE_ENV=production node dist/index.ts"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.0.14",
+    "@chakra-ui/react": "^1.6.5",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "cross-env": "^7.0.3",
+    "framer-motion": "^4",
     "next": "latest",
     "next-images": "^1.8.1",
     "react": "^17.0.2",
