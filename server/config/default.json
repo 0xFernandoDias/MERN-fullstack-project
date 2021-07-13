@@ -1,0 +1,3 @@
+{
+    "mongoURI": "mongodb+srv://dbUser:password12345@cluster0.mdav7.mongodb.net/mern-fullstack-db?retryWrites=true&w=majority"
+}
