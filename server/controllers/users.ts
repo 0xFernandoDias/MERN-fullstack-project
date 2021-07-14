@@ -1,5 +1,5 @@
-import { validationResult } from 'express-validator' // = rules
 import { Request, Response } from 'express'
+import { validationResult } from 'express-validator' // = rules
 import UserModel from '../models/User'
 import gravatar from 'gravatar'
 import bcrypt from 'bcrypt'
@@ -21,7 +21,7 @@ export const registerUser = async (req: Request, res: Response) => {
         let user = await UserModel.findOne({ email })
 
         if (user) {
-            return res.status(400).json({ errors: [{ msg: 'User already exists'}] })
+            return res.status(400).json({ errors: [{ msg: 'User already exists' }] })
         }
 
         // Get user gravatar
@@ -59,11 +59,11 @@ export const registerUser = async (req: Request, res: Response) => {
             config.get('jwtSecret'),
             { expiresIn: 3600000 }, // I GOTTA CHANGE IT
             (err, token) => {
-                if(err) throw err
+                if (err) throw err
 
-                res.json({token})
+                res.json({ token })
             }
-            ) 
+        )
 
     } catch (err) {
         console.log((<Error>err).message)

@@ -6,7 +6,7 @@ import jwt from 'jsonwebtoken'
 import config from 'config'
 
 // Login
-export const authenticateUser = async (req: Request, res: Response) => {
+export const loginUser = async (req: Request, res: Response) => {
     // Check if everything is okay
     const errors = validationResult(req) // checkRules4Auth
     if (!errors.isEmpty()) {

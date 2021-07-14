@@ -1,4 +1,4 @@
-import { check  } from 'express-validator'
+import { check } from 'express-validator'
 
 export const checkRules4Creation = [
     check('name', 'Name is required').not().isEmpty(),
