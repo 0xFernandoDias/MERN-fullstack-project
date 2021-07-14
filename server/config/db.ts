@@ -1,17 +1,17 @@
 import mongoose from 'mongoose'
 import config from 'config'
 
-const db: string = config.get('mongoURI')
+const DB: string = config.get('mongoURI') // DB uri from json
 
-const connectDB = async (): Promise<void> => {
+const connectDB = async () => {
     try {
-        await mongoose.connect(db, {
+        await mongoose.connect(DB, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useCreateIndex: true
         })
 
-        console.log('MongoDB Connected...')
+        console.log('MongoDB Connected')
     } catch (err) {
         console.error((<Error>err).message)
         process.exit

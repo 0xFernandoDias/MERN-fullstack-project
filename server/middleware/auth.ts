@@ -2,8 +2,8 @@ import jwt from 'jsonwebtoken'
 import config from 'config'
 
 export default function (req: any, res: any, next: () => void) {
-    // Get token from header
-    const token = req.header('x-auth-token')
+    // Get token from Header
+    const token = req.header('x-auth-token') // Header key
 
     // Check if not token
     if (!token) {
@@ -12,7 +12,7 @@ export default function (req: any, res: any, next: () => void) {
 
     // Verify token
     try {
-        const decoded = jwt.verify(token, config.get('jwtSecret')) // token == config/default.json ?
+        const decoded = jwt.verify(token, config.get('jwtSecret')) // token == right ?
         const { user }: any = decoded
         req.user = user
         next()

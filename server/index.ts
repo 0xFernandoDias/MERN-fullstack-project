@@ -15,18 +15,14 @@ connectDB()
 // Middleware
 app.use(express.json()) //{ extended: false }
 
-app.get('/', (req, res) => {
-  res.send("It's running!")
-})
-
 // Define Routes
-app.use('/api/auth', authRouter)
-app.use('/api/posts', postsRouter)
-app.use('/api/profile', profileRouter)
 app.use('/api/users', usersRouter)
+app.use('/api/auth', authRouter)
+app.use('/api/profile', profileRouter)
+app.use('/api/posts', postsRouter)
 
 const PORT = parseInt(process.env.PORT || '5000')
 
 app.listen(PORT, () => {
-  console.log(`Ready on: http://localhost:${PORT}`)
+  console.log(`The Server is ready on: http://localhost:${PORT}`)
 })
