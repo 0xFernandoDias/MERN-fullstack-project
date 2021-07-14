@@ -5,7 +5,7 @@ import Head from 'next/head'
 import React from 'react'
 import styled from 'styled-components'
 
-const Home: React.FC = () => {
+export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
@@ -24,8 +24,6 @@ const Home: React.FC = () => {
     </>
   )
 }
-
-export default Home
 
 const Main = styled.div`
   margin-top: 23%;

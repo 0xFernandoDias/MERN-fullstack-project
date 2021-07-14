@@ -9,12 +9,17 @@ import usersRouter from '../server/routes/api/users'
 
 const app = express()
 
+// Connect Database
 connectDB()
+
+// Middleware
+app.use(express.json()) //{ extended: false }
 
 app.get('/', (req, res) => {
   res.send("It's running!")
 })
 
+// Define Routes
 app.use('/api/auth', authRouter)
 app.use('/api/posts', postsRouter)
 app.use('/api/profile', profileRouter)
