@@ -1,6 +1,6 @@
 import { validationResult } from 'express-validator'
 import { Request, Response } from 'express'
-import UserModel from '../models/User'
+import { UserModel } from '../models/User'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import config from 'config'

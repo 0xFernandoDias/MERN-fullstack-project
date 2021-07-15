@@ -10,3 +10,8 @@ export const checkRules4Auth = [
     check('email', 'Please include a valid email').isEmail(),
     check('password', 'Password is requires').exists()
 ]
+
+export const checkProfileCreation = [
+    check('status').not().isEmpty(),
+    check('skillsandlanguages').not().isEmpty()
+]
