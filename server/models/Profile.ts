@@ -2,7 +2,7 @@ import { Schema, model } from 'mongoose'
 
 const ProfileSchema = new Schema({
     user: {
-        type: Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId, // ProfileID != UserId
         ref: 'user'
     },
     location: {
@@ -130,4 +130,4 @@ const ProfileSchema = new Schema({
     }
 })
 
-export const ProfileModel = model('Profile', ProfileSchema)
+export const ProfileModel = model('profile', ProfileSchema)

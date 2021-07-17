@@ -1,4 +1,6 @@
 {
     "mongoURI": "mongodb+srv://dbUser:password12345@cluster0.mdav7.mongodb.net/mern-fullstack-db?retryWrites=true&w=majority",
-    "jwtSecret": "mysecrettoken"
+    "jwtSecret": "mysecrettoken",
+    "githubClientId": "bcdbcba581c1c170011a",
+    "githubSecret": "268f1e6f7ac0564cdb3233fe0298a7d8eb2be443"
 }
