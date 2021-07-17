@@ -28,3 +28,7 @@ export const checkEducationRules = [
     check('fieldtostudy', 'Field to study is required').not().isEmpty(),
     check('from', 'From date is required').not().isEmpty()
 ]
+
+export const checkPostCreation = [
+    check('text', 'Text is required').not().isEmpty()
+]

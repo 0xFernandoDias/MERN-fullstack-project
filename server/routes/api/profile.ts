@@ -44,7 +44,7 @@ profileRouter.put('/experience', paramsArray2, addExperience)
 // @route DELETE api/profile/experience/:exp_id | @description Delete experience | @access Private
 profileRouter.delete('/experience/:exp_id', auth, deleteExperience)
 
-/* @route PUT api/profile/experience/:exp_id | @description Update experience | @access Private AND EDUCATION
+/* @route PUT api/profile/experience/:exp_id | @description Update experience | @access Private AND EDUCATION AND LIKES ON COMMENTS
 profileRouter.put('/experience/:exp_id', paramsArray2, updateExperience) */
 
 // @route PUT api/profile/education | @description Add profile education | @access Private
