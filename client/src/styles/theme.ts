@@ -6,13 +6,13 @@ const config: ThemeConfig = {
 }
 
 const colors = {
-  brand: {
-    900: "#1a365d",
-    800: "#153e75",
-    700: "#2a69ac",
-  },
+  primaryColor: "#17a2b8",
+  darkColor: "#343a40",
+  lightColor: "#f4f4f4",
+  dangerColor: "#dc3545",
+  successColor: "#28a745"
 }
 
 const theme = extendTheme({ config, colors })
-  
+
 export default theme
