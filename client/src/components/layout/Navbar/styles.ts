@@ -15,14 +15,17 @@ export const DarkNavbar = styled.div`
 
     background: ${theme.colors.darkColor};
     color: #fff;
-
+    
     ul {
         display: flex;
+        list-style: none;
     }
     a {
         color: #fff;
         padding: 0.45rem;
         margin: 0 0.25rem;
+        font-size: 20px;
+        text-decoration: none;
     }
     a:hover {
         color: ${theme.colors.primaryColor};

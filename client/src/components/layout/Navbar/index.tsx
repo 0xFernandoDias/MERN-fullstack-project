@@ -19,7 +19,7 @@ export function Navbar(): ReactElement {
       </h1>
       <ul>
         <li>
-          <Link href="/profiles">
+          <Link href="/Profiles">
             <a>Developers</a>
           </Link>
         </li>
